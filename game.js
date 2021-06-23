@@ -5,6 +5,7 @@ var level = 0;
 var started = false;
 
 $(document).on("keypress", function (event) {
+  prompt();
   if (!started) {
     $("#level-title").text("level " + level);
     nextSequence();
